@@ -53,7 +53,7 @@ fn wacc() -> f64 {
     // 50% * 6/100 + 50% * 9/100
     // 3/100 + 4.5/100
     (3.0/100.0) + (4.5/100.0)
-} // println!("WACC: {}", wacc());
+}
 
 fn discount(year: uint, val: f64, wacc: f64) -> (f64) {
     let factor = (1.0 + wacc).powf(year as f64);
